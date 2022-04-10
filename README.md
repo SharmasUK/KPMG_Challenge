@@ -227,5 +227,7 @@ print('Value is - ' + value)
 
 PFA attached executed code snippet to get the vaue 'a'
 
+File name: Python-Script_To resolve the Nested Object.png
+
 
 
