@@ -189,3 +189,43 @@ $.compute.osType - This will retrieve only "Windows" from above Json.
 Some endpoints may return larger Json blobs in this case we can use appending route parameters to the request endpoint to filter down to a subset of the response.
 
 
+Challenge#3
+
+**Solution**
+
+I chosed Python as a programming language to implement this logic.
+Here is the code snippet for the same.
+
+Synopsis:
+Import Json - Is built-in package which can be used to work with JSON data.
+used json.loads method for parsing the json
+used key.splits for to split that dictionary into keys and values into different lists.
+Used the for loop for iterating the dictionary to locate the value
+
+
+***********************CODE************************
+
+
+import json
+
+
+obj = input('Enter the object - ')
+key = input('Enter the Key -')
+input = json.loads(obj)
+
+def function(input,key):
+  list = key.split('/')
+  for i in list:
+    input = input[i]
+   
+  return input
+
+value =  function(input,key)
+print('Value is - ' + value)
+
+***********************************************************
+
+PFA attached executed code snippet to get the vaue 'a'
+
+
+
